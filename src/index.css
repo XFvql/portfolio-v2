@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-6xl {
+    font-size: 4rem /* 48px */;
+    line-height: 1.1;
+}
