@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import logo from '../assets/logo.png'
+import { Link } from 'react-router-dom'
 
 const JPW = () => {
   useEffect(() => {
@@ -26,8 +27,8 @@ const JPW = () => {
             </h1>
             <p className="pt-6 font-serif text-lg text-slate-400 max-w-lg mx-auto lg:mx-0">We build stunning, high-performance websites tailored to your business needs and goals.</p>
             <div className="pt-6 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <a href="https://wa.me/6281217100477" data-aos="fade-up" className="px-8 py-3 rounded-md font-bold text-sm bg-blue-500 text-white hover:scale-105 transition-all">Get Started</a>
-              <a href="#" data-aos="fade-up" className="px-8 py-3 rounded-md font-bold text-sm border-2 border-blue-500 text-white hover:bg-blue-500 transition-all duration-300">Learn More</a>
+              <Link to="https://wa.me/6281217100477" data-aos="fade-up" className="px-8 py-3 rounded-md font-bold text-sm bg-blue-500 text-white hover:scale-105 transition-all">Get Started</Link>
+              <Link to="#" data-aos="fade-up" className="px-8 py-3 rounded-md font-bold text-sm border-2 border-blue-500 text-white hover:bg-blue-500 transition-all duration-300">Learn More</Link>
             </div>
           </div>
 

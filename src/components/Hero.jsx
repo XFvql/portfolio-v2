@@ -4,6 +4,7 @@ import PixelTransition from "./PixelTransition";
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   useEffect(() => {
@@ -31,8 +32,8 @@ const Hero = () => {
 
         {/* Tombol */}
         <div data-aos="fade-up" data-aos-anchor-placement="center-center" className="flex justify-center mt-5 gap-6">
-          <a href="/" className="px-6 py-2 border border-blue-500 rounded hover:rounded-xl text-white hover:bg-blue-500 hover:scale-110 transition-all duration-500">Portfolio</a>
-          <a href="https://wa.me/6281217100477" className="px-6 py-2 border border-blue-500 rounded hover:rounded-xl text-white hover:bg-blue-500 hover:scale-110 transition-all duration-500">Contact Me</a>
+          <Link to="/" className="px-6 py-2 border border-blue-500 rounded hover:rounded-xl text-white hover:bg-blue-500 hover:scale-110 transition-all duration-500">Portfolio</Link>
+          <Link to="https://wa.me/6281217100477" className="px-6 py-2 border border-blue-500 rounded hover:rounded-xl text-white hover:bg-blue-500 hover:scale-110 transition-all duration-500">Contact Me</Link>
         </div>
       </div>
 
